@@ -74,7 +74,9 @@ header{
   min-height: 600px;
   /*Your code here again.*/
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
 
 }
 
@@ -135,6 +137,9 @@ header{
     display: flex;
     flex-basis: 230px;
   } 
+
+  .package header {
+    width: 230px;
 
 
 /*Requirement 12*/
