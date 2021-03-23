@@ -16,6 +16,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
 
 }
 
@@ -27,6 +28,7 @@ header{
   justify-content: space-between;
   align-items: space-between;
   text-align: center;
+  flex-direction: column;
 
 }
 
@@ -41,7 +43,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 /*Requirement 5*/
@@ -53,8 +55,7 @@ header{
   /*Your code here.*/
   /*Take a look at flex-basis*/
   flex-basis: 400px;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
 
 }
 
@@ -64,13 +65,13 @@ header{
   border: 2px solid #45ADAD;
   padding: 20px 0;
   border-radius: 7px 7px 0 0;
+  flex-wrap: wrap;
 }
 
 
 /*Requirement 7*/
 .gallery{
   min-height: 600px;
-  text-align: center;
   /*Your code here again.*/
   display: flex;
   flex-wrap: wrap;
@@ -97,8 +98,7 @@ header{
 @-webkit-keyframes logo_grow{
   /*Your code here.*/
   from {width: 25px};
-  to {width: 420px};
-
+  to {width: 420px}
 
 }
 
@@ -117,6 +117,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   /*Requirement 10*/
@@ -125,6 +126,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   /*Requirement 11*/
@@ -132,10 +134,6 @@ header{
     /*Your code here again.*/
     display: flex;
     flex-basis: 230px;
-    flex-direction: column;
-    border-radius: 7px;
-    padding: 0 0 50px 0;
-    width: auto auto auto;
   } 
 
 
@@ -154,15 +152,15 @@ header{
 
   /*Requirement 13*/
   body {
-    background-image: dissolve;
+    background-image: none;
   }
   /*Requirement 14*/
   nav {
-    width: 100;
+    width: 100px;
   }
   /*Requirement 15*/
   .nav_links {
-    justify-content: space-around;
+    justify-content: space-between;
   }
   /*Requirement 16*/
   .price {
@@ -171,7 +169,7 @@ header{
   /*Requirement 17*/
   .package {
     border: 2px solid #45ADAD;
-    flex-basis: 200px;
+    flex-basis: 230px;
   }
   /*Requirement 18*/
   .gallery {
