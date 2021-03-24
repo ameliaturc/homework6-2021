@@ -99,17 +99,29 @@ header{
 /*Keyframes for animation*/
 @-webkit-keyframes logo_grow{
   /*Your code here.*/
-  from {width: 25px};
-  to {width: 420px}
+  from {
+    width: 25px;
+    opacity: 0;
+  }
+  to {
+    width: 420px;
+    opacity: 1;
+  }
 
 }
 
 @keyframes logo_grow{
   /*Your code here.*/
-  from {opacity: 0}
-  to {opacity: 1}
+  from {
+    width: 25px;
+    opacity: 0;
+  }
+  to {
+    width: 420px;
+    opacity: 1;
+  }
 
-} 
+}
 
 @media screen and (min-width: 850px){
 
@@ -140,14 +152,16 @@ header{
 
   .package header {
     width: 230px;
+  }
+}
 
 
 /*Requirement 12*/
 /*Add media query to handle reduced-motion*/
 /*Your code here again.*/ 
 @media screen and (prefers-reduced-motion: reduce) {
-  .animation {
-    animation-name: dissolve;
+  #logo {
+    animation: none;
   }
 }
 
@@ -156,16 +170,21 @@ header{
 @media print { 
 
   /*Requirement 13*/
+
   body {
     background-image: none;
   }
   /*Requirement 14*/
   nav {
-    width: 100px;
+    width: 100%;
   }
   /*Requirement 15*/
   .nav_links {
+    display: flex;
     justify-content: space-between;
+    align-items: space-between;
+    text-align: center;
+    flex-direction: row;
   }
   /*Requirement 16*/
   .price {
@@ -174,10 +193,16 @@ header{
   /*Requirement 17*/
   .package {
     border: 2px solid #45ADAD;
-    flex-basis: 230px;
+    flex-basis: 200px;
   }
   /*Requirement 18*/
   .gallery {
     display: none;
   }
+
+  #gallery {
+    display: none;
+  }
+
 }
+
