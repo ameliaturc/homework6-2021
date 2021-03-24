@@ -171,6 +171,10 @@ header{
 
   /*Requirement 13*/
 
+  #logo {
+    animation: none;
+  }
+
   body {
     background-image: none;
   }
